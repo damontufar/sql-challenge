@@ -11,6 +11,9 @@ INNER JOIN salaries s ON s.employee_id=em.id
 ORDER BY 1 ASC;
 
 ---2. List first name, last name, and hire date for employees who were hired in 1986.
+---Change "hire_data" column name to "hire_date" (typo made)
+ALTER TABLE employees
+RENAME column hire_data TO hire_date;
 
 SELECT
 first_name,
